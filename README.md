@@ -1,38 +1,20 @@
-# sv
+# Password Manager  
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+## Overview  
+Password Manager is a secure and user-friendly application for managing passwords efficiently. It utilizes AES-256 encryption to protect password data, stores encrypted data locally using an SQLite database secured with SQLCipher, and offers various security and customization features to enhance usability.  
 
-## Creating a project
+## Features  
+- **Encryption & Security**: AES-256 encryption for all passwords, secure local storage, and auto-lock mechanisms.  
+- **Password Management**: Create, tag, and organize passwords with a simple interface.  
+- **Clipboard Protection**: One-click copy with automatic clipboard clearing.  
+- **Password Generator**: Customizable strong password generation with real-time strength feedback.  
+- **Biometric Authentication**: Unlock with fingerprint or Face ID for enhanced security.  
+- **Data Import/Export**: Securely transfer password data via encrypted JSON files.  
+- **Search & Organization**: Quickly find and manage stored passwords using keyword search and custom tags.  
+- **Customization & UI Enhancements**: Adjustable security settings, intuitive layout, and startup animation.  
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Installation  
+_(Coming soon...)_  
 
-```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## License  
+This project is licensed under the MIT License.  
