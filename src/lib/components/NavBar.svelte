@@ -7,13 +7,14 @@
 		<div class="flex h-16 items-center justify-between">
 			<!-- App title -->
 			<div class="flex flex-1 justify-start">
-				<h1 class="text-xl font-bold text-gray-700">Password Manager</h1>
+				<button class="text-xl font-bold text-gray-700" on:click={() => goto('./home')}>Password Manager</button>
 			</div>
 
-			<!-- Create btn -->
+			<!-- Add btn -->
+			<!-- svelte-ignore a11y_consider_explicit_label -->
 			<button
 				class="mr-3 flex flex-col items-center text-gray-700 hover:text-black"
-				on:click={() => goto('')}
+				on:click={() => goto('/others/add')}
 			>
 				<svg
 					class="h-6 w-6"
@@ -27,12 +28,13 @@
 				</svg>
 			</button>
 			<!-- Search btn -->
+			<!-- svelte-ignore a11y_consider_explicit_label -->
 			<button
 				class="mr-3 flex flex-col items-center text-gray-700 hover:text-black"
-				on:click={() => goto('')}
+				on:click={() => goto('/others/search')}
 			>
 				<svg
-                    class="h-6 w-6"
+					class="h-6 w-6"
 					xmlns="http://www.w3.org/2000/svg"
 					width="24"
 					height="24"
@@ -43,21 +45,23 @@
 					></path></svg
 				>
 			</button>
-			<!-- Settings btn -->
+			<!-- More btn -->
+			<!-- svelte-ignore a11y_consider_explicit_label -->
 			<button
 				class="flex flex-col items-center text-gray-700 hover:text-black"
-				on:click={() => goto('')}
+				on:click={() => goto('/others/more')}
 			>
 				<svg
 					class="h-6 w-6"
 					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
 					viewBox="0 0 24 24"
 					fill="currentColor"
+					><path
+						d="M10 3H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM9 9H5V5h4v4zm11-6h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zm-1 6h-4V5h4v4zm-9 4H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1zm-1 6H5v-4h4v4zm8-6c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4zm0 6c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2z"
+					></path></svg
 				>
-					<path
-						d="m2.344 15.271 2 3.46a1 1 0 0 0 1.366.365l1.396-.806c.58.457 1.221.832 1.895 1.112V21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1.598a8.094 8.094 0 0 0 1.895-1.112l1.396.806c.477.275 1.091.11 1.366-.365l2-3.46a1.004 1.004 0 0 0-.365-1.366l-1.372-.793a7.683 7.683 0 0 0-.002-2.224l1.372-.793c.476-.275.641-.89.365-1.366l-2-3.46a1 1 0 0 0-1.366-.365l-1.396.806A8.034 8.034 0 0 0 15 4.598V3a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v1.598A8.094 8.094 0 0 0 7.105 5.71L5.71 4.904a.999.999 0 0 0-1.366.365l-2 3.46a1.004 1.004 0 0 0 .365 1.366l1.372.793a7.683 7.683 0 0 0 0 2.224l-1.372.793c-.476.275-.641.89-.365 1.366zM12 8c2.206 0 4 1.794 4 4s-1.794 4-4 4-4-1.794-4-4 1.794-4 4-4z"
-					></path>
-				</svg>
 			</button>
 		</div>
 	</div>
